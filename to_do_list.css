@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	background: linear-gradient(120deg, #e3ff43, #ff7434 );
+    font-family: 'Poppins', sans-serif;
+}
+
+header{font-size: 1.5rem;
+}
+header,form{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input,form button{
+    padding: 0.4rem  0.5rem;
+    font-size: 1.4rem;
+    font-weight:bold;
+    border: none;
+    background:white ;
+}
+form button{
+    color: #ff7434;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background: #ff7434;
+    color:white;
+
+}
+
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    font-size: 1.4rem;
+    font-weight:bold;
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s ease;
+
+}
+
+
+.todo li{
+    flex: 1;
+}
+.complete-btn,.trash-btn{
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding:  0.8rem;
+    font-size: 1rem;
+}
+
+.complete-btn{
+    background: #4cff16;
+
+}
+.trash-btn{
+
+    background: #ff7434;
+
+}
+
+.complete-btn:hover{
+
+    color: #000000;
+    background: #39f500;
+
+}
+.trash-btn:hover{
+    
+    color: #000000;
+    background: #ff7434;
+
+}
+
+.todo-item{padding: 0px 0.5rem;}
+
+
+
+.bi{
+    pointer-events: none;
+}
+
+
+.todo-item-checked{
+    text-decoration-line: line-through;
+
+}
+.todo-checked{
+    opacity: 0.6;
+
+}
+
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select{
+    color: #ff7434;
+    width: 10rem;
+    cursor: pointer;
+    padding: 0.7rem;
+    transition: 0.7s ease;
+    font-weight: bold;
+}
+option{
+    font-weight: bold;
+    overflow: hidden;
+
+}
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background: #ff7434;
+    color: #ffffff;
+    top:0;
+    right: 0;
+    padding: 0.7rem;
+    pointer-events: none;
+    border-radius:0px 5px 5px 0px;
+    transition: 0.7s ease;
+}
+
+.select:hover::after{
+    background: #ffffff;
+    color: #ff7434;
+}
+
+select,.todo{
+    border-radius: 5px;
+}
+.todo-button,.trash-btn{
+    border-radius:0px 5px 5px 0px;
+}
+.todo-input{
+    border-radius:5px 0px 0px 5px;
+}

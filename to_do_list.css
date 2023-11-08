@@ -5,11 +5,14 @@
 }
 body{
 	height: 100vh;
-	background: linear-gradient(120deg, #e3ff43, #ff7434 );
+	background: linear-gradient(120deg, #c2fff6, #12abfe );
     font-family: 'Poppins', sans-serif;
 }
 
-header{font-size: 1.5rem;
+header h2{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffffff;
 }
 header,form{
     height: 20vh;
@@ -25,13 +28,13 @@ form input,form button{
     background:white ;
 }
 form button{
-    color: #ff7434;
+    color: #61F4DE;
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 form button:hover{
-    background: #ff7434;
+    background: #61F4DE;
     color:white;
 
 }
@@ -45,7 +48,7 @@ form button:hover{
 
 
 .todo-list{
-    min-width: 30%;
+    min-width: 400px;
     list-style: none;
 }
 
@@ -59,8 +62,8 @@ form button:hover{
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    transition: all 0.5s ease;
-
+    transition: all 0.7s ease;
+    color:#373737 ;
 }
 
 
@@ -76,25 +79,20 @@ form button:hover{
 }
 
 .complete-btn{
-    background: #4cff16;
-
+    background: #61F4DE;
 }
 .trash-btn{
 
-    background: #ff7434;
+    background: #FF5050;
 
 }
 
 .complete-btn:hover{
-
-    color: #000000;
-    background: #39f500;
+    background: #59dbc7;
 
 }
 .trash-btn:hover{
-    
-    color: #000000;
-    background: #ff7434;
+    background: #ff3030;
 
 }
 
@@ -118,7 +116,6 @@ form button:hover{
 
 
 .fall{
-    transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
 }
 
@@ -138,7 +135,7 @@ select{
 }
 
 select{
-    color: #ff7434;
+    color: #61F4DE;
     width: 10rem;
     cursor: pointer;
     padding: 0.7rem;
@@ -153,7 +150,7 @@ option{
 .select::after{
     content: "\25BC";
     position: absolute;
-    background: #ff7434;
+    background: #61F4DE;
     color: #ffffff;
     top:0;
     right: 0;
@@ -165,7 +162,7 @@ option{
 
 .select:hover::after{
     background: #ffffff;
-    color: #ff7434;
+    color: #61F4DE;
 }
 
 select,.todo{
